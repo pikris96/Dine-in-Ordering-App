@@ -69,6 +69,17 @@ p {
   font-family: "Montserrat";
   
 }
+.nav-link:hover{
+  cursor: pointer;
+  background-color: #79B3A5;
+}
+
+.after-scroll-navbar{
+  background-color: #12ADB0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  padding: 3%;
+}
 
 /* Buttons */
 
@@ -79,7 +90,7 @@ p {
 /* Title Section */
 
 #title {
-  background-color: #77EBA2;
+  background-color: #439A97;
   color: #fff;
   text-align: left;
 }
@@ -177,7 +188,7 @@ p {
 /* MENU */
 
 .menu-categories .nav-link{
-color: #3DD4CC
+color: #12ADB0
 }
 .categories{
  color: black;
@@ -199,7 +210,7 @@ color: #3DD4CC
 .category-item-ul li{
   list-style-type: none;
   text-align: left;
-  padding: 5%;
+  padding: 2%;
   font-weight: bold;
 }
 .item-price{
@@ -207,6 +218,27 @@ color: #3DD4CC
   padding-top: 3%;
   font-weight: normal;
 }
+
+
+.nav-menu ul {
+  list-style: none;
+  text-align: center;
+  margin: auto;
+}
+
+.nav-menu ul li {
+  display: inline-block;
+}
+
+
+
+/* Modal */
+
+.modal-item-description{
+  display: block;
+}
+
+
 
 @media (max-width: 1028px) {
 
@@ -222,7 +254,7 @@ color: #3DD4CC
     overflow-x: scroll;
   }
   .nav-link{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   h4{
     font-size: 3rem;
@@ -238,5 +270,49 @@ color: #3DD4CC
  .table-Number{
   font-size: 3rem;
  }
+
+/* Modal */
+.modal {
+  padding: 0 !important; 
+}
+.modal .modal-dialog {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+}
+.modal .modal-content {
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+}
+.modal .modal-body {
+  overflow-y: auto;
+}
+.modal-title{
+font-size: 3rem;
+padding:3%
+}
+.close{
+  font-size: 5rem;
+  padding:5%
+}
+.fixed-bottom-modal-footer{
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 3%;
+}
+.minus-icon{
+  font-size: 2rem;
+}
+.plus-icon{
+  font-size: 2rem;
+}
+.add-to-cart{
+  font-size: 2rem;
+}
+.quantity{
+  font-size: 2rem;
+}
 }
 

@@ -29,7 +29,7 @@
 
       <!-- Nav Bar -->
 
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark" id="navbar_top">
 
         <a class="navbar-brand" href="">Dine in Ordering App</a>
 
@@ -128,9 +128,6 @@
         
           </nav>
 
-
-
-
           <!-- <i class="icon fas fa-check-circle fa-4x"></i>
           <h3 class="feature-title">Easy to use.</h3>
           <p>So easy to use, even your dog could do it.</p> -->
@@ -141,7 +138,7 @@
             Drinks
           </h4>
           <ul class="category-item-ul">
-            <li class="nav-link">Freddo Espresso<span class="item-price">$2.00</span></li>
+            <li class="nav-link" data-toggle="modal" data-target="#exampleModalCenter" >Freddo Espresso<span class="item-price">$2.00</span></li>
             <li class="nav-link">Cappuccino <span class="item-price">$2.50</span></li>
             <li class="nav-link">Latte <span class="item-price">$3.00</span></li>
             <li class="nav-link">Hot Chocolate <span class="item-price">$4.00</span></li>
@@ -308,6 +305,59 @@
   </footer>
 
 
+
+  <!-- Modal -->
+<div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered modal-fullscreen" role="document">
+    <div class="modal-content">
+      <div class="modal-header after-scroll-navbar">
+        <h5 class="modal-title" id="exampleModalLongTitle">Freddo Espresso</h5>
+ 
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">   
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer .fixed-bottom-modal-footer">
+        <button type="button" class="btn btn info minus-icon"><i class="fas fa-minus"></i></button>
+        <span class="quantity">1</span>
+        <button type="button" class="btn btn info plus-icon"><i class="fas fa-plus"></i></button>
+        <button type="button" class="btn btn-success add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 </body>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        document.getElementById('navbar_top').classList.add('fixed-top');
+        document.getElementById('navbar_top').classList.add('after-scroll-navbar');
+       
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+
+      } else {
+        document.getElementById('navbar_top').classList.remove('fixed-top');
+        document.getElementById('navbar_top').classList.remove('after-scroll-navbar');
+         // remove padding top from body
+        document.body.style.paddingTop = '0';
+      } 
+  });
+}); 
+</script>
 
 </html>
