@@ -311,7 +311,7 @@
   <div class="modal-dialog  modal-dialog-centered modal-fullscreen" role="document">
     <div class="modal-content">
       <div class="modal-header after-scroll-navbar">
-        <h5 class="modal-title" id="exampleModalLongTitle">Freddo Espresso</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Freddo Espresso<span class="item-price-for-cart" >$2.00</span></h5>
  
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">   
           <span aria-hidden="true">&times;</span>
@@ -319,10 +319,25 @@
       </div>
       
       <div class="modal-body">
-        ...
+        <div class="row sweetness">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <p>Sweetness *</P>
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                No Sugar
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Medium Sugar
+              </label>
+            </div>
+          </div>
       </div>
       <div class="modal-footer fixed-bottom-modal-footer">
-        <div>
+        <div class="col-lg-8 quantity-div" >
         <button type="button" class="btn btn info minus-icon"><i class="fas fa-minus"></i></button>
         <span class="quantity">1</span>
         <button type="button" class="btn btn info plus-icon"><i class="fas fa-plus"></i></button>
