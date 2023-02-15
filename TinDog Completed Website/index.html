@@ -33,15 +33,15 @@
 
         <a class="navbar-brand" href="">Dine in Ordering App</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+       
 
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#footer"><i class="fas fa-cart-plus"></i> Cart</a>
+              <a class="nav-link" href="#footer"><i class="fas-fa-basket-shopping"></i> Cart</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="#pricing">Pricing</a>
@@ -51,7 +51,7 @@
             </li> -->
           </ul>
 
-        </div>
+    
       </nav>
 
 
@@ -138,7 +138,7 @@
             Drinks
           </h4>
           <ul class="category-item-ul">
-            <li class="nav-link" data-toggle="modal" data-target="#exampleModalCenter" >Freddo Espresso<span class="item-price">$2.00</span></li>
+            <li class="nav-link menu-items" data-toggle="modal" data-target="#exampleModalCenter" >Freddo Espresso<span class="item-price">$2.00</span></li>
             <li class="nav-link">Cappuccino <span class="item-price">$2.50</span></li>
             <li class="nav-link">Latte <span class="item-price">$3.00</span></li>
             <li class="nav-link">Hot Chocolate <span class="item-price">$4.00</span></li>
@@ -461,28 +461,43 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 });
 
-
+// Declaration of DOM elements
   let plus = document.querySelector("#plus-icon");
   let minus = document.querySelector("#minus-icon");
   let quantity = document.querySelector("#quantity");
-  quantity.innerText = 1
+  let itemPrice = document.querySelector(".item-price-for-cart");
+  let items = document.querySelector('.menu-items');
+  quantity.innerText = 1;
+  itemPrice.innerText =  parseFloat(2.30).toFixed(2);
+  let itemFixedPrice = itemPrice.innerText;
 
   //Add to quantity by clicking plus button
   function plusButton(){
     let quantity = document.querySelector("#quantity");
+    let itemPrice = document.querySelector(".item-price-for-cart");
     quantity.innerText = parseInt(quantity.innerText) + 1;
-
-
-    
+    itemPrice.innerText = parseFloat(parseInt(quantity.innerText) * itemFixedPrice).toFixed(2);
   }
 
-   //Add to quantity by clicking plus button
+   //Minus to quantity by clicking minus button
    function minusButton(){
     let quantity = document.querySelector("#quantity");
+    let itemPrice = document.querySelector(".item-price-for-cart");
     quantity.innerText = parseInt(quantity.innerText) - 1;
+    itemPrice.innerText = parseFloat(parseInt(quantity.innerText) * itemFixedPrice).toFixed(2)
+
+  }
+
+  //Make the quantity of an item 1 every time that item selected
+  function makeQuantityOne(){
+    let quantity = document.querySelector("#quantity");
+    quantity.innerText = 1;
   }
 
 
+//EventListeners
+
+  items.addEventListener("click",makeQuantityOne)
   plus.addEventListener("click", plusButton);
   minus.addEventListener("click",minusButton);
 
