@@ -265,6 +265,24 @@ color: #12ADB0
   height: auto;
 }
 
+.minus-icon{
+  margin-right: 3%;
+}
+.quantity{
+  margin-right: 3%;
+}
+.add-to-cart{
+  background-color: #44B885;
+}
+
+.preferences-title{
+  font-weight: bold;
+  color: black;
+}
+
+
+
+
 @media (max-width: 1028px) {
 
   #title {
@@ -337,7 +355,7 @@ padding:3%
   margin-top: -5%;
 }
 .minus-icon,.plus-icon,.add-to-cart,.quantity{
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 .form-check-input{
   width: 3rem;
@@ -345,13 +363,15 @@ padding:3%
   margin-left: 1%;
   margin-top: 1%;
  }
+ 
  .form-check-label{
   font-size: 2.5rem;
-  margin-left: 8%;
+margin-left: 8%;
  }
  .sweetness,.syrup,.milk,.comments{
   font-size: 3rem;
  }
+ 
 
 }
 

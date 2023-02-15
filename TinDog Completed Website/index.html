@@ -320,7 +320,7 @@
       <div class="modal-body">
         <div class="row sweetness">
           <div class="col-lg-12 col-md-12 col-sm-12">
-            <p>Sweetness *</p>
+            <p class="preferences-title">Sweetness *</p>
             <div class="form-check ">
               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
               <label class="form-check-label" for="flexRadioDefault1">
@@ -351,7 +351,7 @@
 
       <div class="row milk">
         <div class="col-lg-12 col-md-12 col-sm-12">
-          <p>Milk *</p>
+          <p class="preferences-title">Milk *</p>
           <div class="form-check ">
             <input class="form-check-input" type="radio" name="flexRadioDefaulMilk" id="flexRadioDefault1">
             <label class="form-check-label" for="flexRadioDefault1">
@@ -381,16 +381,16 @@
 
     <div class="row syrup">
       <div class="col-lg-12 col-md-12 col-sm-12">
-      <p>Syrup*</p>
+      <p class="preferences-title">Syrup*</p>
       <div class="form-check">
 
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
       <label class="form-check-label" for="flexCheckDefault">
        Caramel Syrup
       </label>
     </div>
     <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+      <input class="form-check-input " type="checkbox" value="" id="flexCheckChecked" checked>
       <label class="form-check-label" for="flexCheckChecked">
         Vanillia Syrup
       </label>
@@ -399,7 +399,7 @@
     </div>
     <div class="row syrup">
       <div class="col-lg-12 col-md-12 col-sm-12">
-      <p>Syrup*</p>
+      <p class="preferences-title">Syrup*</p>
       <div class="form-check">
 
       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -418,49 +418,24 @@
 
     <div class="row comments">
       <div class="col-lg-12 col-md-12 col-sm-12">
-        <p>Comments</p>
+        <p class="preferences-title">Comments</p>
         <textarea id="comments" rows="3" style="width: 100%;margin-bottom: 50px;"   placeholder="If you want to write some comments" >
-
-
-
         </textarea>
-
-
       </div>
-
-
-
-
     </div>
-
-
-
-
       </div>
-
-
-
-
-
-   
-
-
 
       <div class="modal-footer fixed-bottom-modal-footer">
         <div class="col-lg-8 quantity-div" >
-        <button type="button" class="btn btn info minus-icon"><i class="fas fa-minus"></i></button>
-        <span class="quantity">1</span>
-        <button type="button" class="btn btn info plus-icon"><i class="fas fa-plus"></i></button>
+        <button type="button" class="btn btn info minus-icon" id="minus-icon"><i class="fas fa-minus"></i></button>
+        <span class="quantity" id="quantity">0</span>
+        <button type="button" class="btn btn info plus-icon" id="plus-icon"><i class="fas fa-plus"></i></button>
         </div>
         <button type="button" class="btn btn-success add-to-cart">Add to Cart</button>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
 
 
 </body>
@@ -484,7 +459,37 @@ document.addEventListener("DOMContentLoaded", function(){
         document.body.style.paddingTop = '0';
       } 
   });
-}); 
+});
+
+
+  let plus = document.querySelector("#plus-icon");
+  let minus = document.querySelector("#minus-icon");
+  let quantity = document.querySelector("#quantity");
+  quantity.innerText = 1
+
+  //Add to quantity by clicking plus button
+  function plusButton(){
+    let quantity = document.querySelector("#quantity");
+    quantity.innerText = parseInt(quantity.innerText) + 1;
+
+
+    
+  }
+
+   //Add to quantity by clicking plus button
+   function minusButton(){
+    let quantity = document.querySelector("#quantity");
+    quantity.innerText = parseInt(quantity.innerText) - 1;
+  }
+
+
+  plus.addEventListener("click", plusButton);
+  minus.addEventListener("click",minusButton);
+
+
+
+
+
 </script>
 
 </html>
