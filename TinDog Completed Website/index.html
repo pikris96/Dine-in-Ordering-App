@@ -80,27 +80,23 @@
   <!-- Menu -->
 
   <section class="white-section" id="features">
+    <div class="cart-section">
+      <h2>Cart</h2>
+    </div>
 
     <div class="container-fluid">
 
 
-      <h2> Menu</h2>
-
+   
+      <h2 class="col-lg-8"> Menu</h2>
       <div class="row">
-        <div class="feature-box col-lg-12">
-
-
+        <div class="feature-box col-lg-8">    
           <nav class="navbar navbar-expand-sm nav-menu">
-
-       
              <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03">
                 <span class="navbar-toggler-icon menu-toggle-icon">
                   <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
                 </span>
             </button>  -->
-    
-         
-    
               <ul class="navbar-nav ml-auto menu-categories">
                 <li class="nav-item">
                   <a class="nav-link" href="#drinks">Drinks</a>
@@ -124,16 +120,18 @@
                   <a class="nav-link" href="#cta">Coffees</a>
                 </li>
               </ul>
-    
-        
           </nav>
 
+         
           <!-- <i class="icon fas fa-check-circle fa-4x"></i>
           <h3 class="feature-title">Easy to use.</h3>
           <p>So easy to use, even your dog could do it.</p> -->
         </div>
 
-        <div class="col-lg-12 col-md-12 col-sm-12" id="drinks">
+
+
+
+        <div class="col-lg-8 col-md-8 col-sm-12" id="drinks">
           <h4 class="category-item">
             Drinks
           </h4>
@@ -146,7 +144,7 @@
         </div>
 
 
-        <div class="col-lg-12 col-md-12 col-sm-12" id="starters">
+        <div class="col-lg-8 col-md-8 col-sm-12" id="starters">
           <h4 class="category-item">
             Starters
           </h4>
@@ -158,6 +156,9 @@
           </ul>
         </div>
 
+       <div class="container-fluid">
+        <button class="goToCard  btn btn-success " type="button"> <span class="totalItems"></span> Go to Card</button>
+      </div>
 <!-- 
         <div class="feature-box col-lg-4">
           <i class="icon fas fa-bullseye fa-4x"></i>
@@ -179,7 +180,7 @@
 
   <!-- Testimonials -->
 
-  <section class="colored-section" id="testimonials">
+  <!-- <section class="colored-section" id="testimonials">
 
     <div id="testimonial-carousel" class="carousel slide" data-ride="false">
       <div class="carousel-inner">
@@ -202,23 +203,23 @@
       </a>
     </div>
 
-  </section>
+  </section> -->
 
 
   <!-- Press -->
 
-  <section class="colored-section" id="press">
+  <!-- <section class="colored-section" id="press">
     <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
     <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
     <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
     <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
 
-  </section>
+  </section> -->
 
 
   <!-- Pricing -->
 
-  <section class="white-section" id="pricing">
+  <!-- <section class="white-section" id="pricing">
 
     <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
@@ -276,12 +277,12 @@
 
     </div>
 
-  </section>
+  </section> -->
 
 
   <!-- Call to Action -->
 
-  <section class="colored-section" id="cta">
+  <!-- <section class="colored-section" id="cta">
 
     <div class="container-fluid">
 
@@ -289,12 +290,12 @@
       <button class="download-button btn btn-lg btn-dark" type="button"><i class="fab fa-apple"></i> Download</button>
       <button class="download-button btn btn-lg brn-light" type="button"><i class="fab fa-google-play"></i> Download</button>
     </div>
-  </section>
+  </section> -->
 
 
   <!-- Footer -->
 
-  <footer class="white-section" id="footer">
+  <!-- <footer class="white-section" id="footer">
     <div class="container-fluid">
       <i class="social-icon fab fa-facebook-f"></i>
       <i class="social-icon fab fa-twitter"></i>
@@ -302,7 +303,7 @@
       <i class="social-icon fas fa-envelope"></i>
       <p>© Copyright 2018 TinDog</p>
     </div>
-  </footer>
+  </footer> -->
 
 
 
@@ -321,7 +322,7 @@
         <div class="row sweetness">
           <div class="col-lg-12 col-md-12 col-sm-12">
             <p class="preferences-title">Sweetness *</p>
-            <div class="form-check ">
+            <div class="form-check">
               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
               <label class="form-check-label" for="flexRadioDefault1">
                 No Sugar
@@ -467,6 +468,13 @@ document.addEventListener("DOMContentLoaded", function(){
   let quantity = document.querySelector("#quantity");
   let itemPrice = document.querySelector(".item-price-for-cart");
   let items = document.querySelector('.menu-items');
+  let add = document.querySelector(".add-to-cart");
+  let goToCard = document.querySelector(".goToCard");
+  let totalItemInCard = 0;
+  console.log(goToCard);
+
+  let card = [];
+
   quantity.innerText = 1;
   itemPrice.innerText =  parseFloat(2.30).toFixed(2);
   let itemFixedPrice = itemPrice.innerText;
@@ -485,7 +493,6 @@ document.addEventListener("DOMContentLoaded", function(){
     let itemPrice = document.querySelector(".item-price-for-cart");
     quantity.innerText = parseInt(quantity.innerText) - 1;
     itemPrice.innerText = parseFloat(parseInt(quantity.innerText) * itemFixedPrice).toFixed(2)
-
   }
 
   //Make the quantity of an item 1 every time that item selected
@@ -494,10 +501,43 @@ document.addEventListener("DOMContentLoaded", function(){
     quantity.innerText = 1;
   }
 
+  //Add To CART
+  function addToCart(){
 
-//EventListeners
+    let quantity = document.querySelector("#quantity");
+    let itemName = document.querySelector("#exampleModalLongTitle");
+    let totalPriceForItem = document.querySelector(".item-price-for-cart")
 
-  items.addEventListener("click",makeQuantityOne)
+
+    const obj = {item: itemName.innerText,
+                  quantity: quantity.innerText,
+                totalPrice:totalPriceForItem.innerText}
+    card.push(obj);
+    goToCard.style.display="block";
+
+     card.forEach(i => {
+      totalItemInCard += parseInt(i.quantity);
+     })
+    
+     let totalItemsSpan = document.querySelector(".totalItems");
+     totalItemsSpan.innerText = totalItemInCard;
+
+  }
+
+  //Check if the card is Empty
+  if (card.length <= 0){
+    goToCard.style.display="none";
+  }
+
+  //Find the total quantity of items in the CART
+
+ 
+
+
+
+  //EventListeners
+  add.addEventListener("click",addToCart);
+  items.addEventListener("click",makeQuantityOne);
   plus.addEventListener("click", plusButton);
   minus.addEventListener("click",minusButton);
 
