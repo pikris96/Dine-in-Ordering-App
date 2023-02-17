@@ -80,18 +80,18 @@
   <!-- Menu -->
 
   <section class="white-section" id="features">
-    <div class="cart-section">
+    <!-- <div class="cart-section">
       <h2>Cart</h2>
-    </div>
+    </div> -->
 
     <div class="container-fluid">
 
 
    
-      <h2 class="col-lg-8"> Menu</h2>
+      <h2 class="col-lg-12 col-md-12 col-sm-12"> Menu</h2>
       <div class="row">
-        <div class="feature-box col-lg-8">    
-          <nav class="navbar navbar-expand-sm nav-menu">
+        <div class="feature-box col-lg-12">    
+          <nav class="navbar navbar-expand-sm nav-menu" id="nav-menu-categories">
              <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03">
                 <span class="navbar-toggler-icon menu-toggle-icon">
                   <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
@@ -444,8 +444,10 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function(){
+ 
+ //Showing the header when scrolling down
   window.addEventListener('scroll', function() {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 200) {
         document.getElementById('navbar_top').classList.add('fixed-top');
         document.getElementById('navbar_top').classList.add('after-scroll-navbar');
        
@@ -460,6 +462,36 @@ document.addEventListener("DOMContentLoaded", function(){
         document.body.style.paddingTop = '0';
       } 
   });
+
+  //Showing the nav-bar when scrolling down
+
+ window.addEventListener('scroll', function() {
+      if (window.scrollY > 250) {
+        document.getElementById('nav-menu-categories').classList.add('nav-bar-categories-after-scroll');
+        // document.getElementById('navbar_top').classList.add('after-scroll-navbar');
+       
+        // add padding top to show content behind navbar
+        // navbar_height = document.querySelector('#nav-menu-categories').offsetHeight;
+        navbar_top = document.querySelector(".fixed-top").offsetHeight;
+        document.body.style.paddingTop =  navbar_top +100 + 'px';
+
+      } else {
+        document.getElementById('nav-menu-categories').classList.remove('nav-bar-categories-after-scroll');
+        // document.getElementById('navbar_top').classList.remove('after-scroll-navbar');
+         // remove padding top from body
+        document.body.style.paddingTop = '0';
+      } 
+  });
+
+
+
+
+
+
+
+
+
+
 });
 
 // Declaration of DOM elements

@@ -313,6 +313,17 @@ box-shadow: 0 4px 2px -2px gray;
   width: 100px;
   display: inline-block;
 }
+.nav-bar-categories-after-scroll{
+  top:130px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  padding: 3%;
+  position :fixed;
+  left: 0;
+  z-index: 1;
+}
 
 
 @media (max-width: 1028px) {
