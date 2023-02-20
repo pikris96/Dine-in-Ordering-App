@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=.45 
+          maximum-scale=1, user-scalable=no">
   <title>Dine in App</title>
 
   <!-- Google Fonts -->
@@ -29,9 +32,9 @@
 
       <!-- Nav Bar -->
 
-      <nav class="navbar navbar-expand-lg navbar-dark" id="navbar_top">
+      <nav class="navbar navbar-expand-lg navbar-dark " id="navbar_top">
 
-        <a class="navbar-brand" href="">Dine in Ordering App</a>
+        <a class="navbar-brand" href="/index.html">Dine in Ordering App</a>
 
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
             <span class="navbar-toggler-icon"></span>
@@ -41,7 +44,7 @@
 
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#footer"><i class="fas-fa-basket-shopping"></i> Cart</a>
+              <a class="nav-link" href="#footer"><i class="fas-fa-basket-shopping nav-bar-card"></i> Cart <span class="nav-bar-card-items"></span></a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="#pricing">Pricing</a>
@@ -157,7 +160,7 @@
         </div>
 
        <div class="container-fluid">
-        <button class="goToCard  btn btn-success " type="button"> <span class="totalItems"></span> Go to Card</button>
+        <a class="goToCard  btn btn-success" href="C:\Users\paraskevas\Desktop\Dine-in-Ordering-App-main\TinDog Completed Website\card.html"> <span class="totalItems"></span> Go to Card</a>
       </div>
 <!-- 
         <div class="feature-box col-lg-4">
@@ -447,7 +450,7 @@ document.addEventListener("DOMContentLoaded", function(){
  
  //Showing the header when scrolling down
   window.addEventListener('scroll', function() {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 150) {
         document.getElementById('navbar_top').classList.add('fixed-top');
         document.getElementById('navbar_top').classList.add('after-scroll-navbar');
        
@@ -552,7 +555,10 @@ document.addEventListener("DOMContentLoaded", function(){
      })
     
      let totalItemsSpan = document.querySelector(".totalItems");
+     let cardItems = document.querySelector(".nav-bar-card-items");
      totalItemsSpan.innerText = totalItemInCard;
+     cardItems.innerText = totalItemInCard;
+     cardItems.style.display = 'inline-block'
 
   }
 

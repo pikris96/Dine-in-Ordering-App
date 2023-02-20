@@ -1,4 +1,6 @@
-
+html {
+  -webkit-text-size-adjust: 100%;
+}
 body {
   font-family: "Montserrat";
   text-align: center;
@@ -21,7 +23,7 @@ textarea{
 
 .big-heading {
   font-family: "Montserrat";
-  font-size: 3.5rem;
+  font-size: 3.5rem; 
   line-height: 1.5;
   text-align: center;
 }
@@ -203,6 +205,7 @@ color: #12ADB0
 .nav-link:focus{
   background-color: #3DD4CC;
   color: white;
+  border-radius: 10px;
 }
 .category-item{
   text-align: left;
@@ -312,6 +315,7 @@ box-shadow: 0 4px 2px -2px gray;
   height: 100px;
   width: 100px;
   display: inline-block;
+  border-radius: 10px;
 }
 .nav-bar-categories-after-scroll{
   top:130px;
@@ -323,6 +327,22 @@ box-shadow: 0 4px 2px -2px gray;
   position :fixed;
   left: 0;
   z-index: 1;
+  height: 120px;
+}
+.nav-bar-card{
+  position: relative;
+  width: 200px;
+}
+
+.nav-bar-card-items{
+    border-radius: 100%;
+    padding: 3px 10px;
+    color: white;
+    background-color: #F94A29;
+    position: absolute;
+    margin-left: 5px;
+    font-size: 0.9rem;
+    display: none;
 }
 
 
@@ -348,11 +368,11 @@ box-shadow: 0 4px 2px -2px gray;
 
   .category-item-ul li{
     padding: 7%;
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
   }
- .big-heading{
-  font-size: 6rem;
- }
+ /* .big-heading{
+  /* font-size: 6rem; */
+ /* }  */
  .table-Number{
   font-size: 3rem;
  }
@@ -421,7 +441,7 @@ margin-left: 8%;
  .add-to-cart{
   width: 700px;
   height: 100px;
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
  }
  
  .cart-section{
