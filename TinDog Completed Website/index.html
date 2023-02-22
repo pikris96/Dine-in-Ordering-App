@@ -12,7 +12,11 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
 
   <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+ 
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Font Awesome -->
@@ -21,7 +25,8 @@
   <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -60,20 +65,20 @@
 
       <!-- Title -->
 
-      <div class="row">
+      <!-- <div class="row">
 
         <div class="col-lg-12">
           <h1 class="big-heading"> DSTRKT</h1>
           <h3 class="table-Number">Table 27</h3>
-          <!-- <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
           <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button> -->
-        </div>
+        <!-- </div> -->
 
         <!-- <div class="col-lg-6">
           <img class="title-image" src="images/DSTRKT1.jpg" alt="iphone-mockup">
         </div> -->
 
-      </div>
+      <!-- </div> --> 
 
     </div>
 
@@ -105,10 +110,10 @@
                   <a class="nav-link" href="#drinks">Drinks</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#pricing">Starters</a>
+                  <a class="nav-link" href="#starters">Starters</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#cta">Mains</a>
+                  <a class="nav-link" href="#mains">Mains</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#cta">Dessets</a>
@@ -125,6 +130,7 @@
               </ul>
           </nav>
 
+          
          
           <!-- <i class="icon fas fa-check-circle fa-4x"></i>
           <h3 class="feature-title">Easy to use.</h3>
@@ -132,14 +138,14 @@
         </div>
 
 
+        <div data-bs-spy="scroll" data-bs-target="#nav-menu-categories" data-bs-offset="0" class="scrollspy-example"  tabindex="0">
 
-
-        <div class="col-lg-8 col-md-8 col-sm-12" id="drinks">
+        <div class="col-lg-12 col-md-12 col-sm-12" id="drinks">
           <h4 class="category-item">
             Drinks
           </h4>
           <ul class="category-item-ul">
-            <li class="nav-link menu-items" data-toggle="modal" data-target="#exampleModalCenter" >Freddo Espresso<span class="item-price">$2.00</span></li>
+            <li class="nav-link menu-items" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" >Freddo Espresso<span class="item-price">$2.00</span></li>
             <li class="nav-link">Cappuccino <span class="item-price">$2.50</span></li>
             <li class="nav-link">Latte <span class="item-price">$3.00</span></li>
             <li class="nav-link">Hot Chocolate <span class="item-price">$4.00</span></li>
@@ -147,7 +153,7 @@
         </div>
 
 
-        <div class="col-lg-8 col-md-8 col-sm-12" id="starters">
+        <div class="col-lg-12 col-md-12 col-sm-12" id="starters">
           <h4 class="category-item">
             Starters
           </h4>
@@ -158,7 +164,7 @@
             <li class="nav-link">Hot Chocolate <span class="item-price">$2.00</span></li>
           </ul>
         </div>
-
+      </div>
        <div class="container-fluid">
         <a class="goToCard  btn btn-success" href="./card.html"> <span class="totalItems"></span> Go to Card</a>
       </div>
@@ -312,11 +318,11 @@
 
   <!-- Modal -->
 <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog  modal-dialog-centered modal-fullscreen" role="document">
+  <div class="modal-dialog  modal-dialog-centered " role="document">
     <div class="modal-content">
       <div class="modal-header after-scroll-navbar">
         <h5 class="modal-title" id="exampleModalLongTitle">Freddo Espresso<span class="item-price-for-cart" >$2.00</span></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">   
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">   
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -430,12 +436,16 @@
       </div>
 
       <div class="modal-footer fixed-bottom-modal-footer">
-        <div class="col-lg-6 quantity-div" >
+    
+        <div class=" quantity-div" >
         <button type="button" class="btn btn info minus-icon" id="minus-icon"><i class="fas fa-minus"></i></button>
         <span class="quantity" id="quantity">0</span>
         <button type="button" class="btn btn info plus-icon" id="plus-icon"><i class="fas fa-plus"></i></button>
         </div>
+        <div class="" >
         <button type="button" class="btn btn-success add-to-cart">Add to Cart</button>
+        </div>
+     
       </div>
     </div>
   </div>
@@ -485,17 +495,9 @@ document.addEventListener("DOMContentLoaded", function(){
         document.body.style.paddingTop = '0';
       } 
   });
-
-
-
-
-
-
-
-
-
-
 });
+
+
 
 // Declaration of DOM elements
   let plus = document.querySelector("#plus-icon");
@@ -505,11 +507,11 @@ document.addEventListener("DOMContentLoaded", function(){
   let items = document.querySelector('.menu-items');
   let add = document.querySelector(".add-to-cart");
   let goToCard = document.querySelector(".goToCard");
+  let modal = document.querySelector(".modal");
   let totalItemInCard = 0;
-  console.log(goToCard);
-
   let card = [];
 
+//Declare default values
   quantity.innerText = 1;
   itemPrice.innerText =  parseFloat(2.30).toFixed(2);
   let itemFixedPrice = itemPrice.innerText;
@@ -544,22 +546,29 @@ document.addEventListener("DOMContentLoaded", function(){
     let totalPriceForItem = document.querySelector(".item-price-for-cart")
 
 
+    //Add the items in card array
     const obj = {item: itemName.innerText,
                   quantity: quantity.innerText,
                 totalPrice:totalPriceForItem.innerText}
     card.push(obj);
-    goToCard.style.display="block";
-
-     card.forEach(i => {
+  
+      // Make the total item zero every time that add new items to make the correct addition
+    totalItemInCard = 0;
+    // calculate the quantity of items in card
+      card.forEach(i => {
       totalItemInCard += parseInt(i.quantity);
      })
-    
+
+     goToCard.style.display="block";
      let totalItemsSpan = document.querySelector(".totalItems");
      let cardItems = document.querySelector(".nav-bar-card-items");
      totalItemsSpan.innerText = totalItemInCard;
      cardItems.innerText = totalItemInCard;
      cardItems.style.display = 'inline-block'
-
+  
+     //close modal window
+     $('.modal').modal('hide');
+     itemPrice.innerText = itemFixedPrice;
   }
 
   //Check if the card is Empty
@@ -567,21 +576,11 @@ document.addEventListener("DOMContentLoaded", function(){
     goToCard.style.display="none";
   }
 
-  //Find the total quantity of items in the CART
-
- 
-
-
-
   //EventListeners
   add.addEventListener("click",addToCart);
   items.addEventListener("click",makeQuantityOne);
   plus.addEventListener("click", plusButton);
   minus.addEventListener("click",minusButton);
-
-
-
-
 
 </script>
 
