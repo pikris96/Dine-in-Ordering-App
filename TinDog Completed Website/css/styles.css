@@ -626,6 +626,17 @@ padding:3%
   padding: 2%;
 }
 
+.card-form-input{
+  height: 100px !important;
+  font-size: 2rem;
+}
+.card-form-label{
+  font-size: 1.7rem;
+}
+.card-details-header{
+  font-size: 2.5rem;
+}
+
 /* CONFIRMATION PAGE */
 .confirmation-icon{
   font-size: 14rem;
