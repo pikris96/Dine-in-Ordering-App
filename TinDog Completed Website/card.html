@@ -84,11 +84,27 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
                     <div class="form-floating m-3">
                       <input type="text" id="tableNumberControl" class="form-control card-form-input"
                         placeholder="1234 5678 1234 5678" />
-                      <label class="form-label card-form-label" for="tableNumberControl">Table number</label>
+                      <label class="form-label card-form-label" for="tableNumberControl">Table number #</label>
                     </div>
 
-                    <div class="rounded-bottom" style="background-color: #eee;">
+                    <div class="rounded-bottom" style="background-color: whitesmoke;">
                       <div class="card-body">
+                        <div class="paymentMethodDiv" style="margin-top: 10px;">
+                        <p class="paymentMethodTitle">Select payment method:</p>  
+                        
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="paymentMethod" id="payWithCash" checked>
+                          <label class="form-check-label" for="payWithCash">Pay via cash
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="paymentMethod" id="payWithCard" >
+                          <label class="form-check-label" for="payWithCard">Pay via card
+                          </label>
+                        </div>
+
+                      </div>
+                      <div class="cardDetailsSection" style="border: 1px solid lightgray;padding: 1%;" >
                         <p class="mb-4 pt-4 card-details-header">Card details</p>
           
                         <div class="form-floating m-3">
@@ -112,6 +128,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
                             </div>
                           </div>
                         </div>
+                      </div>
                       </div>
                     </div>
 

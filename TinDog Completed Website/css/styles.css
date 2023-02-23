@@ -440,6 +440,13 @@ box-shadow: 0 4px 2px -2px gray;
 .tableNum-textbox{
     border-radius: 10px;
 }
+.paymentMethodDiv{
+  padding: 3%
+}
+.paymentMethodTitle{
+  text-align: left;
+  font-size: 2rem;
+}
 
 
 /* CONFIRMATION PAGE */
