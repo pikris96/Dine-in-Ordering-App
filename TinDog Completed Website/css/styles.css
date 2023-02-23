@@ -423,7 +423,6 @@ border-top: 1px solid grey;
   margin: auto;
   width: 100% ;
 }
-
 .item-in-order{
   margin: 2%;
   width: 70%;
@@ -440,6 +439,59 @@ border-top: 1px solid grey;
 .tableNum-textbox{
     border-radius: 10px;
 }
+
+
+/* CONFIRMATION PAGE */
+
+.confirm-message{
+  width: 100%;
+  padding: 10%;
+}
+
+.confirmation-icon{
+  font-size: 10rem;
+  color: lightgreen;
+}
+
+.confirmation-details{
+  display: flex;
+  position: relative;
+  margin: auto;
+  width: 100% ;
+}
+.confirmation-details-icon{
+  padding: 2%;
+  width: 50px;
+  height: 50px;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  margin: 1%;
+}
+.confirmation-details-header{
+  margin: 2%;
+  width: 70%;
+  text-align: left;
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}
+.confirmation-details-value{
+  display: block;
+  text-align: left;
+  color: grey;
+  font-weight: 400;
+}
+.confirmation-details-div{
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 7% 5%;
+
+}
+
+
 /*-------------- USING OF MEDIA FOR SMALLER SCREEN SIZE------------- */
 
 @media (max-width: 1028px) {
@@ -569,6 +621,32 @@ padding:3%
   font-size: 3rem;
 }
 
+/* CONFIRMATION PAGE */
+.confirmation-icon{
+  font-size: 14rem;
+}
+
+.confirmation-message-order-time{
+  font-size: 2.8rem;
+}
+.confirmation-message-for-email{
+  font-size: 1.7rem;
+}
+.confirmation-details-icon{
+  font-size: 2rem;
+  width: 80px;
+  height: 80px;
+}
+.confirmation-details-header{
+  font-size: 1.7rem;
+}
+
+.confirmation-details-value{
+  font-size: 2rem;
+}
+.returnHome{
+  background-color: black;
+}
 
 }
 
