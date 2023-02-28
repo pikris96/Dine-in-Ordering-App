@@ -496,10 +496,22 @@ box-shadow: 0 4px 2px -2px gray;
   text-align: center;
   border-radius: 10px;
   padding: 7% 5%;
-
 }
 
+/* Welcome Page */
 
+.welcome-image{
+  width: 100%;
+  height: auto;
+}
+.table-number-section-phone{
+margin: auto;
+}
+
+.goToMenu{
+  margin-top: 3%;
+  width: 100%;
+}
 /*-------------- USING OF MEDIA FOR SMALLER SCREEN SIZE------------- */
 
 @media (max-width: 1028px) {
@@ -671,6 +683,37 @@ padding:3%
   background-color: black;
 }
 
+/* Welcome Page */
+.footer-phone{
+  padding: 3%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: -5%;
+  font-size: 3rem;
+  left: 0;
+  color: #439A97
+}
+.table-number-section-phone{
+  padding: 10%;
+    margin: auto;
+    width: 80%;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    border-radius: 10px;
+    border:1px solid lightgray
+
+}
+.welcome-image{
+  width: 100%;
+  height: auto;
+}
+.goToMenu{
+  font-size: 2.5rem;
+}
 }
 
 
