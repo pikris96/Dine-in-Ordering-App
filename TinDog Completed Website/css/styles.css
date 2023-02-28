@@ -269,6 +269,9 @@ color: #12ADB0
   float: none;
   margin: auto;
 }
+.form-check-input:checked[type=radio],.form-check-input:checked[type=checkbox]{
+  background-color: #12ADB0;
+}
 .form-check-label{
   margin-left: 5%;
 }
@@ -353,6 +356,19 @@ box-shadow: 0 4px 2px -2px gray;
     margin-left: 5px;
     font-size: 0.9rem;
     display: none;
+}
+
+.search{
+  height: 50px;
+  margin: 20px auto;
+}
+#search-addon{
+background-color: whitesmoke;
+border: none;
+}
+.search-input{
+  background-color: whitesmoke;
+  border: none;
 }
 
 
@@ -627,6 +643,18 @@ padding:3%
   left: 0;
   color: white;
 }
+
+
+
+.search{
+  height: 100px;
+  margin: 20px auto;
+}
+#search-addon,.search-input{
+font-size: 2.5rem;
+}
+
+
 
 /* CART PAGE */
 .order-header-div p,.order-item-quantity,.item-price-in-order,.item-in-order,.order-item-total{
