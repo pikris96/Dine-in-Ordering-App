@@ -87,12 +87,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
                         <p class="paymentMethodTitle">Select payment method:</p>  
                         
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="paymentMethod" id="payWithCash" checked>
+                          <input class="form-check-input" type="radio" name="paymentMethod" id="payWithCash" >
                           <label class="form-check-label" for="payWithCash">Pay via cash
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="paymentMethod" id="payWithCard" >
+                          <input class="form-check-input" type="radio" name="paymentMethod" id="payWithCard" checked >
                           <label class="form-check-label" for="payWithCard">Pay via card
                           </label>
                         </div>
@@ -102,9 +102,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
                         <p class="mb-4 pt-4 card-details-header">Card details</p>
           
                         <div class="form-floating m-3">
-                          <input type="text" id="formControlLgXM8" class="form-control card-form-input"
+                          <input type="text" id="cardNumber" class="form-control card-form-input"
                             placeholder="1234 5678 1234 5678" />
-                          <label class="form-label card-form-label" for="formControlLgXM8">Card Number</label>
+                          <label class="form-label card-form-label" for="cardNumber">Card Number</label>
                           <div class="card-images" style="width: 100%;text-align: left;">
                             <img src="images/visa.png" alt="visa" >
                             <img src="images/masterCard.png" alt="masterCard">
@@ -179,27 +179,39 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       
       </section>
 
-          
-  
-
- 
-    
- 
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
+
+
+
+<script>
+
+  //radio buttons declaratios
+  let cash = document.querySelector("#payWithCash");
+  let card = document.querySelector("#payWithCard");
+  
+  //funtion when cash method selected
+  function cashSelection(){
+  let cardDetailsSection = document.querySelector(".cardDetailsSection");
+  cardDetailsSection.style.pointerEvents = 'none';
+  }
+  
+  //function when card method selected
+  function cardSelection(){
+  let cardDetailsSection = document.querySelector(".cardDetailsSection");
+  let cardNumber = document.querySelector("#cardNumber");
+  cardDetailsSection.style.pointerEvents = 'auto';
+  cardNumber.focus();
+  }
+  
+  //Event Listeners
+  cash.addEventListener("click",cashSelection);
+  card.addEventListener("click",cardSelection);
+  
+  
+  
+  
+  </script>
+
+
+
 </html>
