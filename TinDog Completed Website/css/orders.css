@@ -191,7 +191,6 @@ a {
     }
 }
 @media (max-width: 1028px){
-
     :root {
         --header-height: 3rem;
         --nav-width: 80px;
@@ -202,6 +201,17 @@ a {
         --normal-font-size: 1rem;
         --z-fixed: 100
     }
+
+
+    .l-navbar {
+   
+        width: var(--nav-width);
+        height: 100%;
+        padding: .5rem 1rem 0 0;
+
+        z-index: var(--z-fixed)
+    }
+
 .bx,.nav_logo-icon{
     font-size: 2.5rem;
 }
