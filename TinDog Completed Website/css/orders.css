@@ -151,6 +151,11 @@ a {
     height: 100vh
 }
 
+.order-time{
+    float: right;
+}
+
+
 @media screen and (min-width: 768px) {
 
     body {
@@ -184,4 +189,42 @@ a {
     .body-pd {
         padding-left: calc(var(--nav-width) + 188px)
     }
+}
+@media (max-width: 1028px){
+
+    :root {
+        --header-height: 3rem;
+        --nav-width: 80px;
+        --first-color: #439A97;;
+        --first-color-light: #AFA5D9;
+        --white-color: #F7F6FB;
+        --body-font: 'Nunito', sans-serif;
+        --normal-font-size: 1rem;
+        --z-fixed: 100
+    }
+.bx,.nav_logo-icon{
+    font-size: 2.5rem;
+}
+.nav_link,.nav_logo{
+    font-size: 1.6rem;
+}
+.show {
+    width: calc(var(--nav-width) + 206px)
+}
+.body-pd {
+    padding-left: calc(var(--nav-width) + 206px)
+}
+.badge{
+    font-size:1.5rem
+}
+.order-table-header{
+    font-size:2rem
+}
+.order-items{
+    font-size: 1.5rem;
+}
+.order-time{
+    font-size: 1.3rem;
+}
+
 }
