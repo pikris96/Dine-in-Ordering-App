@@ -206,7 +206,7 @@ a {
     .l-navbar {
    
         width: var(--nav-width);
-        height: auto;
+        height: 100vh;
         padding: .5rem 1rem 0 0;
 
         z-index: var(--z-fixed)
