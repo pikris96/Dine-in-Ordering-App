@@ -206,7 +206,7 @@ a {
     .l-navbar {
    
         width: var(--nav-width);
-        height: 100vh;
+        height: 100%;
         padding: .5rem 1rem 0 0;
 
         z-index: var(--z-fixed)
@@ -235,6 +235,20 @@ a {
 }
 .order-time{
     font-size: 1.3rem;
+}
+
+.nav_list{
+    display: inline-flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #439A97;
+    margin: auto;
+    left: 0;
+    justify-content: center;
+}
+.nav_name{
+    display: none;
 }
 
 }
