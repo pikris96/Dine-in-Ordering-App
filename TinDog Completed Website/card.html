@@ -73,12 +73,47 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     
         
             <div class="order-header-div">
-                <h4>Order</h4>
-                <p>Estimated time 10'</p>
+                <h4>Your Order</h4>
+                <!-- <p>Estimated time 10'</p> -->
             </div>
 
 
             <div class="row">
+              
+              <div class="col-lg-6 col-md-12 col-sm-12" id="card-items">
+                <h4 class="card-item-header">
+                  Cart
+                </h4>
+        
+                
+                <div class="col-lg-6 col-md-12 col-sm-12 item-in-card-navLink">     
+                    <span class="order-item-quantity">3</span>
+                    <p class="item-in-order">Freddo Espresso <span class="item-preferences-in-order">12oz,No Sugar</span></p> 
+                    <span class="item-price-in-order">$6.00</span>
+                </div>
+        
+        
+                <div class="col-lg-6 col-md-12 col-sm-12 item-in-card-navLink">     
+                    <span class="order-item-quantity">2</span>
+                <p class="item-in-order">Freddo Capuccino<span class="item-preferences-in-order">12oz,No Sugar</span></p> 
+                    <span class="item-price-in-order">$6.60</span>
+                </div>
+        
+        
+                <div class="col-lg-6 col-md-12 col-sm-12 item-in-card-total">     
+                    <span class="order-item-total"><i class="fa-solid fa-money-bill"></i></span>
+                <p class="item-in-order">Total<span class="item-preferences-in-order"></span></p> 
+                    <span class="item-price-in-order">$12.60</span>
+                </div>
+        
+              </div>
+
+
+
+
+
+
+
                 <div class="col-lg-6 col-md-12 col-sm-12 cafe-Name-Table">
            
                     <div class="rounded-bottom" style="background-color: whitesmoke;">
@@ -135,33 +170,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
                   <!-- <h3 class="table-Number">Table 27</h3> -->
                 </div>
     
-                <div class="col-lg-6 col-md-12 col-sm-12" id="card-items">
-                    <h4 class="card-item-header">
-                      Cart
-                    </h4>
-            
-                    
-                    <div class="col-lg-6 col-md-12 col-sm-12 item-in-card-navLink">     
-                        <span class="order-item-quantity">3</span>
-                        <p class="item-in-order">Freddo Espresso <span class="item-preferences-in-order">12oz,No Sugar</span></p> 
-                        <span class="item-price-in-order">$6.00</span>
-                    </div>
-            
-            
-                    <div class="col-lg-6 col-md-12 col-sm-12 item-in-card-navLink">     
-                        <span class="order-item-quantity">2</span>
-                    <p class="item-in-order">Freddo Capuccino<span class="item-preferences-in-order">12oz,No Sugar</span></p> 
-                        <span class="item-price-in-order">$6.60</span>
-                    </div>
-            
-            
-                    <div class="col-lg-6 col-md-12 col-sm-12 item-in-card-total">     
-                        <span class="order-item-total"><i class="fa-solid fa-money-bill"></i></span>
-                    <p class="item-in-order">Total<span class="item-preferences-in-order"></span></p> 
-                        <span class="item-price-in-order">$12.60</span>
-                    </div>
-            
-                  </div>
 
 
 
@@ -188,11 +196,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
   //radio buttons declaratios
   let cash = document.querySelector("#payWithCash");
   let card = document.querySelector("#payWithCard");
+  let orderButton  =document.querySelector(".goToCard");
   
   //funtion when cash method selected
   function cashSelection(){
   let cardDetailsSection = document.querySelector(".cardDetailsSection");
   cardDetailsSection.style.pointerEvents = 'none';
+    orderButton.innerText = "Pay Later & Place Order"
   }
   
   //function when card method selected
@@ -201,6 +211,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
   let cardNumber = document.querySelector("#cardNumber");
   cardDetailsSection.style.pointerEvents = 'auto';
   cardNumber.focus();
+  orderButton.innerText = "Pay Now & Place Order"
   }
   
   //Event Listeners

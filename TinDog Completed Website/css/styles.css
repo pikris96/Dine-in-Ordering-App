@@ -321,15 +321,7 @@ box-sizing: border-box;
 box-shadow: 0 4px 2px -2px gray;
 }
 .totalItems{
-  border: 1px solid lightgray;
-  padding: 1%;
-  background-color: whitesmoke;
-  color: black;
-  margin-right: 2px;
-  height: 100px;
-  width: 100px;
-  display: inline-block;
-  border-radius: 10px;
+  color: white;
 }
 .nav-bar-categories-after-scroll{
   top:130px;
@@ -394,7 +386,6 @@ border: none;
 /* CART PAGE */
 
 #card-items{
-
   text-align: center;
   border: 1px solid lightgray;
   border-radius: 10px;
@@ -658,7 +649,7 @@ padding:3%
   bottom: 0;
   width: 100%;
   margin-top: -5%;
-  font-size: 3rem;
+  font-size: 2.2rem;
   left: 0;
   color: white;
 }
