@@ -154,6 +154,9 @@ a {
 .order-time{
     float: right;
 }
+#orders,#dashboard,#feedbacks,#notifications,#food-menu{
+padding: 10px;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -212,7 +215,7 @@ a {
         z-index: var(--z-fixed)
     }
 
-.bx,.nav_logo-icon{
+.bx,.nav_logo-icon,.nav_icon{
     font-size: 2.5rem;
 }
 .nav_link,.nav_logo{

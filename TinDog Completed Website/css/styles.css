@@ -219,6 +219,7 @@ color: #12ADB0
   text-align: left;
   padding: 2%;
   font-weight: bold;
+  position: relative;
 }
 .item-price{
   display: block;
@@ -371,7 +372,25 @@ border: none;
   border: none;
 }
 
+.item-image{
+  width: 120px;
+  height: 120px;
+  float: right;
+  position:absolute;
+  top:0;
+  right: 0;
+}
 
+.item-image-modal{
+  width: 70%;
+
+}
+.modal-image{
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+}
 /* CART PAGE */
 
 #card-items{
@@ -643,9 +662,6 @@ padding:3%
   left: 0;
   color: white;
 }
-
-
-
 .search{
   height: 100px;
   margin: 20px auto;
@@ -654,7 +670,10 @@ padding:3%
 font-size: 2.5rem;
 }
 
-
+.item-image{
+  width: 150px;
+  height: 150px;
+}
 
 /* CART PAGE */
 .order-header-div p,.order-item-quantity,.item-price-in-order,.item-in-order,.order-item-total{

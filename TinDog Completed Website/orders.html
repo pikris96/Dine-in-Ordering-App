@@ -44,11 +44,12 @@
           <i class='fa-solid fa-utensils nav_logo-icon'></i>
           <span class="nav_logo-name">Dine in Ordering</span> </a>
         <div class="nav_list">
-          <a href="#main" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a> 
-          <a href="#orders" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Orders</span> </a> 
-          <a href="#" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Messages</span> </a> 
-          <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a> 
-          <a href="#" class="nav_link"><i class='bx bxs-food-menu nav_icon'></i> <span class="nav_name">Food Menu</span> </a>
+          <a href="#dashboard" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a> 
+          <a href="#orders" class="nav_link"><i class="fa-solid fa-bell-concierge nav_icon"></i> <span class="nav_name">Orders</span> </a> 
+          <a href="#notifications" class="nav_link"><i class='bx bxs-bell nav_icon'></i>  <span class="nav_name">Notifications</span> </a> 
+          <a href="#food-menu" class="nav_link"><i class='bx bxs-food-menu nav_icon'></i> <span class="nav_name">Food Menu</span> </a>
+          <a href="#feedbacks" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Feedbacks</span> </a> 
+
         </div>
       </div>
        <a href="./login.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span>
@@ -56,17 +57,17 @@
     </nav>
   </div>
   <!--Container Main start-->
-  <div class="section" id="main" >
-      <h4>Main Components</h4>
+  <div class="section" id="dashboard" >
+      <h2>Dashboard</h2>
   </div>
 
   <div id="orders" class="section">
     <h2 style="text-align: left;margin: 2%;">Orders</h2>
           <div class="row order" style="margin: 2%;background-color: whitesmoke;text-align: left;padding: 1%;border-radius: 10px;">
             <div class="col-lg-12 col-md-12 col-sm-12 " >
-              <p class="badge bg-danger">Pending</p> 
+              <p class="badge bg-success">New order</p> 
       <!-- <button class="btn btn-success" style="float: right;">Ready</button> -->
-       <p class="order-time" >Order Time:07:29:35</p> 
+       <p class="order-time" >Placed 1 minutes ago</p> 
               <h5 class="order-table-header">Table# 25</h5>
               <p class="order-items">2x:Freddo Espesso No Sugar,1x:Fresh Orange juice</p>    
            
@@ -76,7 +77,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 " >
               <p class="badge bg-danger">Pending</p> 
       <!-- <button class="btn btn-success" style="float: right;">Ready</button> -->
-       <p class="order-time" >Order Time:07:47:35</p> 
+       <p class="order-time">Placed 2 minutes ago</p> 
               <h5 class="order-table-header">Table# 35</h5>
               <p class="order-items">2x:Freddo Espesso No Sugar,1x:Fresh Orange juice</p>   
             
@@ -84,6 +85,17 @@
           </div> 
         </div>
 
+      <div id="notifications" class="section">
+        <h2 style="text-align: left;margin: 2%;">Notifications</h2>
+      </div>
+
+      <div id="feedbacks" class="section">
+        <h2 style="text-align: left;margin: 2%;">Feedbacks</h2>
+      </div>
+
+      <div id="food-menu" class="section">
+        <h2 style="text-align: left;margin: 2%;">Food Menu</h2>
+      </div>
   <!-- <section class="colored-section" id="title">
 
         <div class="container-fluid">

@@ -74,7 +74,7 @@ form{
 
 @media (max-width: 1028px) {
 	.main-content{
-		margin: 1em auto;
+		margin: 3em auto;
 	}
 
 	.login_form{
@@ -91,6 +91,7 @@ form{
 	flex-direction: column;
 	justify-content: center;
 	color: #fff;
+	padding: 10px;
 	
 }
 
