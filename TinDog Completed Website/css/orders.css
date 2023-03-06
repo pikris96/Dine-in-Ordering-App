@@ -251,4 +251,13 @@ a {
     display: none;
 }
 
+.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 85px;
+    height: 4px;
+    background-color: var(--white-color)
+}
+
 }
