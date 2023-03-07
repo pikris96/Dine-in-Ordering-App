@@ -474,6 +474,17 @@ border: none;
   font-size: 2rem;
 }
 
+.tooltip-inner{
+  background-color: #12ADB0;
+  font-size: 1rem;
+}
+
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before{
+  border-top-color:#12ADB0 ;
+}
+.tooltip .tooltip-arrow::before{
+  border-style: none;
+}
 
 /* CONFIRMATION PAGE */
 
@@ -524,6 +535,20 @@ border: none;
   padding: 7% 5%;
 }
 
+.experienceIcon{
+  margin: 5%;
+  padding: 2%;
+  border:1px solid #439A97;
+  border-radius: 100%;
+  font-size: 2rem;
+  color: #439A97;
+}
+
+.experienceIcon:hover,.experienceIcon:focus{
+  color: white;
+  background-color: #439A97;
+}
+
 /* Welcome Page */
 
 .welcome-image{
@@ -561,7 +586,7 @@ margin: auto;
   }
 
   .category-item-ul li{
-    padding: 7%;
+    padding: 5%;
     /* font-size: 2.5rem; */
   }
  /* .big-heading{
@@ -571,6 +596,9 @@ margin: auto;
   font-size: 3rem;
  }
 
+ .container-fluid{
+  padding: 1%
+}
 /* Modal */
 .modal {
   padding: 0 !important; 
@@ -694,6 +722,11 @@ font-size: 2.5rem;
   font-size: 2.5rem;
 }
 
+#emailReceipt{
+  height: 80px;
+  font-size: 2rem;
+}
+
 /* CONFIRMATION PAGE */
 .confirmation-icon{
   font-size: 14rem;
@@ -719,6 +752,10 @@ font-size: 2.5rem;
 }
 .returnHome{
   background-color: black;
+}
+
+.experienceRating{
+  margin-bottom: 15%;
 }
 
 /* Welcome Page */
