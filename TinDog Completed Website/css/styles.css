@@ -212,6 +212,8 @@ color: #12ADB0
   border-bottom: 1px solid black;
   padding-bottom: 5px;
   padding-top: 15px;
+  font-weight: bolder;
+    color: #3DD4CC;
 }
 
 .category-item-ul li{
@@ -324,7 +326,7 @@ box-shadow: 0 4px 2px -2px gray;
   color: white;
 }
 .nav-bar-categories-after-scroll{
-  top:130px;
+  top:125px;
   width: 100%;
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -484,6 +486,12 @@ border: none;
 }
 .tooltip .tooltip-arrow::before{
   border-style: none;
+}
+tooltipReceipt{
+  padding: 1%;
+  background-color: #12ADB0;
+  color: white;
+  
 }
 
 /* CONFIRMATION PAGE */
@@ -727,6 +735,11 @@ font-size: 2.5rem;
   font-size: 2rem;
 }
 
+.tooltip-inner{
+  background-color: #12ADB0;
+  font-size: 1.5rem;
+}
+
 /* CONFIRMATION PAGE */
 .confirmation-icon{
   font-size: 14rem;
@@ -757,6 +770,11 @@ font-size: 2.5rem;
 .experienceRating{
   margin-bottom: 15%;
 }
+
+.experienceIcon{
+  font-size: 4rem;
+}
+
 
 /* Welcome Page */
 .footer-phone{
