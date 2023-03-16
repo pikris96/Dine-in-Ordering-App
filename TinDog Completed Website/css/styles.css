@@ -59,6 +59,10 @@ textarea{
   /* padding: 0 0 4.5rem; */
   justify-content: space-between;
 }
+.navbar-toggler{
+  color: #3DD4CC;
+  font-size: 2rem;
+}
 
 .navbar-brand {
   font-family: "Ubuntu";
@@ -191,6 +195,27 @@ textarea{
   margin: 20px 10px;
 }
 
+.selectedTableNumberDiv{
+  border: 1px solid lightgray;
+  margin: 5%;    
+
+}
+.selectedBrandLogo{
+  width: 20%;
+  background-color: black;
+}
+.selectedTableNumber{
+  font-size: 2.3rem;
+  margin: 1%;
+  color: black;
+  font-weight: bolder;
+  width: -webkit-fill-available;
+  padding: 3%;
+}
+
+.menuHtwo{
+  font-size: 1.9rem;
+}
 /* MENU */
 
 .menu-categories .nav-link{
@@ -213,7 +238,7 @@ color: #12ADB0
   padding-bottom: 5px;
   padding-top: 15px;
   font-weight: bolder;
-    color: #3DD4CC;
+    color: black;
 }
 
 .category-item-ul li{
@@ -222,12 +247,15 @@ color: #12ADB0
   padding: 2%;
   font-weight: bold;
   position: relative;
+  color: #12ADB0;
 }
 .item-price{
   display: block;
   padding-top: 3%;
   font-weight: normal;
+  color: black;
 }
+
 
 
 .nav-menu ul {
