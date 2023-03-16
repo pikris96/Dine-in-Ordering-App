@@ -302,9 +302,10 @@ color: #12ADB0
 }
 .sweetness,.syrup,.milk,.comments{
   text-align: left;
+  background-color: white
 }
 .form-check{
-  background-color: white;
+  background-color: whitesmoke;
   margin: 2%;
   border-radius: 3%;
   padding: 2%;
@@ -346,9 +347,11 @@ color: #12ADB0
 .preferences-title{
   font-weight: bold;
   color: black;
+  padding: 2%;
 }
 .modal-header{
   box-shadow: 0 4px 2px -2px gray;
+  padding: 0;
 }
 .quantity-div{
   margin: auto;
@@ -418,7 +421,7 @@ border: none;
 }
 
 .item-image-modal{
-  width: 70%;
+  width: 100%;
 
 }
 .modal-image{
@@ -675,10 +678,12 @@ margin: auto;
 
 .modal-title{
 font-size: 3rem;
-padding:3%
+padding:3%;
+color: white;
 }
 .close{
   font-size: 5rem;
+  color: white;
 }
 
 .fixed-bottom-modal-footer{
@@ -714,6 +719,9 @@ padding:3%
  .add-to-cart{
   
   height: 100px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  background-color: #12ADB0;
   /* font-size: 2.5rem; */
  }
  
@@ -721,16 +729,17 @@ padding:3%
   display: none;
  }
 .goToCard{
-  background-color: #44B885;
+  background-color: #12ADB0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 3%;
   position: fixed;
   bottom: 0;
   width: 100%;
   margin-top: -5%;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   left: 0;
   color: white;
+  font-weight: 800;
 }
 .search{
   height: 100px;
@@ -757,7 +766,7 @@ font-size: 2.5rem;
   color: #12ADB0;
 }
 .item-desc{
-  width: 70%;
+  width: 65%;
   font-size: 1.7rem;
 }
 
