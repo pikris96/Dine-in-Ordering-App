@@ -69,6 +69,11 @@ textarea{
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
+  color: #12ADB0
+}
+
+.nav-add-to-card{
+  color: #12ADB0
 }
 
 .nav-item {
@@ -90,6 +95,11 @@ textarea{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   padding: 3%;
+}
+.beforeScroll{
+  background-color: white;
+  border-bottom: 2px solid lightgray;
+  box-shadow: inset 0px -10px 8px -10px #ccc; 
 }
 
 /* Buttons */
@@ -228,17 +238,20 @@ color: #12ADB0
   color: black !important;
 }
 .nav-link:focus,.nav-link.active{
-  background-color: #3DD4CC;
+  /* background-color: #3DD4CC;
   color: white !important;
-  border-radius: 10px;
+  border-radius: 10px; */
+  color: black !important;
+  font-weight: border;
+  border-bottom: 4px solid #12ADB0;
+
 }
 .category-item{
   text-align: left;
   border-bottom: 1px solid black;
-  padding-bottom: 5px;
-  padding-top: 15px;
   font-weight: bolder;
-    color: black;
+  color: black;
+  padding: 15px 0 5px 2rem;
 }
 
 .category-item-ul li{
@@ -248,12 +261,13 @@ color: #12ADB0
   font-weight: bold;
   position: relative;
   color: #12ADB0;
+  border-bottom: 1px solid lightgray
 }
 .item-price{
   display: block;
   padding-top: 3%;
-  font-weight: normal;
   color: black;
+  font-size: 1.8rem;
 }
 
 
@@ -396,7 +410,7 @@ border: none;
 
 .item-image{
   width: 120px;
-  height: 120px;
+  height: auto;
   float: right;
   position:absolute;
   top:0;
@@ -616,13 +630,14 @@ margin: auto;
   }
   .nav-link{
     font-size: 2.5rem;
+    font-weight: bold;
   }
   h4{
     font-size: 3rem;
   }
 
   .category-item-ul li{
-    padding: 5%;
+    padding: 5% 0;
     /* font-size: 2.5rem; */
   }
  /* .big-heading{
@@ -724,10 +739,26 @@ padding:3%
 #search-addon,.search-input{
 font-size: 2.5rem;
 }
+.menu-items{
+  position: relative;
+}
 
 .item-image{
-  width: 150px;
-  height: 150px;
+  width: 280px;
+  height: auto;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.menu-item{
+  color: #12ADB0;
+}
+.item-desc{
+  width: 70%;
+  font-size: 1.7rem;
 }
 
 /* CART PAGE */
