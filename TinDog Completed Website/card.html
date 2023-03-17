@@ -29,42 +29,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
 
 </head>
 <body>
-    <section class="colored-section" id="title">
-
-        <div class="container-fluid">
-    
-          <!-- Nav Bar -->
-    
-          <nav class="navbar navbar-expand-lg navbar-dark" id="navbar_top">
-    
-            <a class="navbar-brand" href="./index.html">Dine in Ordering App</a>
-    
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-    
-          </nav>
-    
-    
-          <!-- Title -->
-    
-          <!-- <div class="row">
-    
-            <div class="col-lg-12">
-              <h1 class="big-heading"> DSTRKT</h1>
-              <h3 class="table-Number">Table 27</h3> -->
-              <!-- <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
-              <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button> -->
-            <!-- </div> -->
-    
-            <!-- <div class="col-lg-6">
-              <img class="title-image" src="images/DSTRKT1.jpg" alt="iphone-mockup">
-            </div> -->
-    
-          <!-- </div> -->
-
-        </div>
-      </section>
+  <section class="colored-section" id="title">
+    <div class="after-scroll-navbar beforeScrollWithoutShadow">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark " id="navbar_top">
+      <!--Toggle Button-->   
+        <a class="navbar-toggler" href="./index.html" >
+          <i class="fa-solid fa-arrow-left-long"></i>
+        </a>
+      <!--Brand Logo-->
+        <a class="navbar-brand" href="./index.html" ><i class="fa-solid fa-utensils" ></i> </i>Dine in Order</a>
+        <!--Add to Basket-->
+          <ul class="navbar-nav ml-auto" style="width: 30%;">
+            <div class="selectedTableNumberDiv">   
+              <p class="selectedTableNumber" style="font-size: 2rem;color:#12ADB0">Table #25</p>
+            </div>
+          </ul>
+      </nav>
+    </div>
+  </section>
 
       <section class="white-section" id="features" style="padding: 2%;">
         <!-- <div class="cart-section">
@@ -173,18 +156,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
 
                   <!-- <h3 class="table-Number">Table 27</h3> -->
                 </div>
-    
-
-
-
-
-
-
             </div>
             
           
-
-      
       <div class="container-fluid">
         <a class="goToCard  btn btn-success" href="./confirmationMessage.html">Order Now</a>
       </div>
@@ -196,6 +170,35 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
 
 
 <script>
+
+document.addEventListener("DOMContentLoaded", function(){
+ 
+ //Showing the header when scrolling down
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 150) {
+        document.getElementById('navbar_top').classList.add('fixed-top');
+        document.getElementById('navbar_top').classList.add('after-scroll-navbar');
+        document.querySelector(".navbar-brand").style.color = 'white';
+        document.querySelector(".navbar-toggler").style.color = 'white';
+        document.querySelector(".selectedTableNumber").style.color = 'white';
+       
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+
+      } else {
+        document.getElementById('navbar_top').classList.remove('fixed-top');
+        document.getElementById('navbar_top').classList.remove('after-scroll-navbar');
+        document.querySelector(".navbar-brand").style.color = '#12ADB0';
+        document.querySelector(".navbar-toggler").style.color = '#12ADB0';
+        document.querySelector(".selectedTableNumber").style.color = '#12ADB0';
+         // remove padding top from body
+        document.body.style.paddingTop = '0';
+      } 
+  });
+});
+
+
 
   //radio buttons declaratios
   let cash = document.querySelector("#payWithCash");

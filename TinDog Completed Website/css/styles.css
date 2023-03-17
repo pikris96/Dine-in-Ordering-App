@@ -102,6 +102,10 @@ textarea{
   box-shadow: inset 0px -10px 8px -10px #ccc; 
 }
 
+.beforeScrollWithoutShadow{
+  background-color: white;
+}
+
 /* Buttons */
 
 .download-button {
@@ -320,6 +324,8 @@ color: #12ADB0
 }
 .form-check-label{
   margin-left: 5%;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 .form-check-label:hover{
   cursor: pointer;
