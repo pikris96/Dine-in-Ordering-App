@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=.7 
+          maximum-scale=1, user-scalable=no">
+  <title>Dine in App</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/orders.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body-pd">
+
+  <header class="header" id="header">
+    <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+    <div class="header_img"> <img src="images/DSTRKT1.jpg" alt=""> </div>
+  </header>
+  <div class="l-navbar" id="nav-bar">
+    <nav class="nav">
+      <div> <a href="#" class="nav_logo">
+          <i class='fa-solid fa-utensils nav_logo-icon'></i>
+          <span class="nav_logo-name">Dine in Ordering</span> </a>
+        <div class="nav_list">
+          <a href="#dashboard" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a> 
+          <a href="#orders" class="nav_link"><i class="fa-solid fa-bell-concierge nav_icon"></i> <span class="nav_name">Orders</span> </a> 
+          <a href="#notifications" class="nav_link"><i class='bx bxs-bell nav_icon'></i>  <span class="nav_name">Notifications</span> </a> 
+          <a href="#food-menu" class="nav_link"><i class='bx bxs-food-menu nav_icon'></i> <span class="nav_name">Food Menu</span> </a>
+          <a href="#feedbacks" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Feedbacks</span> </a> 
+
+        </div>
+      </div>
+       <a href="./login.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span>
+      </a>
+    </nav>
+  </div>
+  <!--Container Main start-->
+  <div class="section" id="dashboard" >
+      <h2>Dashboard</h2>
+  </div>
+
+  <div id="orders" class="section">
+    <h2 style="text-align: left;margin: 2%;">Orders</h2>
+          <div class="row order" style="margin: 2%;background-color: whitesmoke;text-align: left;padding: 1%;border-radius: 10px;">
+            <div class="col-lg-12 col-md-12 col-sm-12 " >
+              <p class="badge bg-success">New order</p> 
+      <!-- <button class="btn btn-success" style="float: right;">Ready</button> -->
+       <p class="order-time" >Placed 1 minutes ago</p> 
+              <h5 class="order-table-header">Table# 25</h5>
+              <p class="order-items">2x:Freddo Espesso No Sugar,1x:Fresh Orange juice</p>    
+           
+            </div>
+          </div> 
+     <div class="row order" style="margin: 2%;background-color: whitesmoke;text-align: left;padding: 1%;border-radius: 10px;"> 
+            <div class="col-lg-12 col-md-12 col-sm-12 " >
+              <p class="badge bg-danger">Pending</p> 
+      <!-- <button class="btn btn-success" style="float: right;">Ready</button> -->
+       <p class="order-time">Placed 2 minutes ago</p> 
+              <h5 class="order-table-header">Table# 35</h5>
+              <p class="order-items">2x:Freddo Espesso No Sugar,1x:Fresh Orange juice</p>   
+            
+            </div>
+          </div> 
+        </div>
+
+      <div id="notifications" class="section">
+        <h2 style="text-align: left;margin: 2%;">Notifications</h2>
+      </div>
+
+      <div id="feedbacks" class="section">
+        <h2 style="text-align: left;margin: 2%;">Feedbacks</h2>
+      </div>
+
+      <div id="food-menu" class="section">
+        <h2 style="text-align: left;margin: 2%;">Food Menu</h2>
+      </div>
+  <!-- <section class="colored-section" id="title">
+
+        <div class="container-fluid">
+    
+          Nav Bar -->
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark " id="navbar_top">
+    
+            <a class="navbar-brand" href="./index.html">Dine in Ordering App</a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+     -->
+
+
+  <!-- <ul class="navbar-nav ml-auto">
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="#pricing">Orders</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#cta">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./card.html"><i class="fa-solid fa-user"></i></a>
+                </li>
+              </ul>
+              
+          </nav>
+
+        </div>
+
+      </section> --> 
+
+</body>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+
+    const showNavbar = (toggleId, navId, bodyId, headerId) => {
+      const toggle = document.getElementById(toggleId),
+        nav = document.getElementById(navId),
+        bodypd = document.getElementById(bodyId),
+        headerpd = document.getElementById(headerId)
+
+      // Validate that all variables exist
+      if (toggle && nav && bodypd && headerpd) {
+        toggle.addEventListener('click', () => {
+          // show navbar
+          nav.classList.toggle('show')
+          // change icon
+          toggle.classList.toggle('bx-x')
+          // add padding to body
+          bodypd.classList.toggle('body-pd')
+          // add padding to header
+          headerpd.classList.toggle('body-pd')
+        })
+      }
+    }
+
+    showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
+
+    /*===== LINK ACTIVE =====*/
+    const linkColor = document.querySelectorAll('.nav_link')
+
+    function colorLink() {
+      if (linkColor) {
+        linkColor.forEach(l => l.classList.remove('active'))
+        this.classList.add('active')
+      }
+    }
+    linkColor.forEach(l => l.addEventListener('click', colorLink))
+
+    // Your code to run since DOM is loaded and ready
+  });
+
+</script>
+
+
+
+
+</html>

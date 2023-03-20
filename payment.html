@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=.45 
+    maximum-scale=1, user-scalable=no">
+
+    <title>Dine in App: CART</title>
+
+    <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+</head>
+<body>
+  <section class="colored-section" id="title">
+    <div class="after-scroll-navbar beforeScrollWithoutShadow">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark " id="navbar_top">
+      <!--Toggle Button-->   
+        <a class="navbar-toggler" href="./index.html" >
+          <i class="fa-solid fa-arrow-left-long"></i>
+        </a>
+      <!--Brand Logo-->
+        <a class="navbar-brand" href="./index.html" ><i class="fa-solid fa-utensils" ></i> </i>Dine in Order</a>
+        <!--Add to Basket-->
+          <ul class="navbar-nav ml-auto" style="width: 30%;">
+            <div class="selectedTableNumberDiv">   
+              <p class="selectedTableNumber" style="font-size: 2rem;color:#12ADB0">Table #25</p>
+            </div>
+          </ul>
+      </nav>
+    </div>
+  </section>
+
+      <section class="white-section" id="features" style="padding: 2%;">
+        <div class="order-header-div" style="margin: 50px 0;">
+          <h4>Pay Now</h4>
+          <!-- <p>Estimated time 10'</p> -->
+      </div>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Your Order (2)
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <div class="row">
+              
+                <div class="col-lg-6 col-md-12 col-sm-12" id="card-items">
+                  
+                  <div class="col-lg-6 col-md-12 col-sm-12 item-in-card-navLink">  
+       
+                      <span class="order-item-quantity">3</span>
+                      <p class="item-in-order">Freddo Espresso <span class="item-preferences-in-order">12oz,No Sugar</span></p> 
+                      <span class="item-price-in-order">$6.00</span>
+  
+                  </div>
+          
+          
+                  <div class="col-lg-6 col-md-12 col-sm-12 item-in-card-navLink">     
+                      <span class="order-item-quantity">2</span>
+                  <p class="item-in-order">Freddo Capuccino<span class="item-preferences-in-order">12oz,No Sugar</span></p> 
+                      <span class="item-price-in-order">$6.60</span>
+                  </div>
+          
+          
+                  <div class="col-lg-6 col-md-12 col-sm-12 item-in-card-total">               
+                  <p class="item-in-order">Subtotal<span class="item-preferences-in-order"></span></p> 
+                      <span class="item-price-in-order">$12.60</span>
+                  </div>    
+  
+                  
+                  <div class="col-lg-6 col-md-12 col-sm-12 item-in-card-navLink">               
+                    <p class="item-in-order">Tax<span class="item-preferences-in-order"></span></p> 
+                        <span class="item-price-in-order">$1.60</span>
+                    </div>  
+                </div>   
+                        </div>   
+
+
+                      </div>
+          </div>
+        </div>
+      </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 cafe-Name-Table">
+                  <p class="payment-titles">Your Information</p>
+                  <div class="emailReceipt">
+                    <p class="paymentMethodTitle">Enter your email to get the receipt <i class="fa-solid fa-circle-question tooltipReceipt" data-toggle="tooltip" data-placement="top" 
+                      title="Receive the receipt to your email for envioromental reasons"></i></p>
+                    <input type="email" class="form-control" id="emailReceipt" aria-describedby="emailHelp" placeholder="abc@gmail.com">
+                  </div>
+
+                    <div class="rounded-bottom" style="background-color: whitesmoke;">
+                      <div class="card-body" style="background-color: white;">
+                        <div class="paymentMethodDiv" style="margin-top: 10px;">
+                        <p class="payment-titles">Select payment method:</p>  
+                        <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 form-check" style="background-color: white;margin: 0;">
+                          <input class="form-check-input" type="radio" name="paymentMethod" id="payWithCash" >
+                          <label class="form-check-label" for="payWithCash">Pay via cash
+                          </label>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 form-check" style="background-color: white;margin: 0;">
+                          <input class="form-check-input" type="radio" name="paymentMethod" id="payWithCard" checked >
+                          <label class="form-check-label" for="payWithCard">Pay via card
+                          </label>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="cardDetailsSection" style="padding: 1%;" >
+                        <div class="form-floating m-3">
+                          <input type="text" id="cardNumber" class="form-control card-form-input"
+                            placeholder="1234 5678 1234 5678" />
+                          <label class="form-label card-form-label" for="cardNumber">Card Number</label>
+                          <div class="card-images" style="width: 100%;text-align: left;">
+                            <img src="images/visa.png" alt="visa" >
+                            <img src="images/masterCard.png" alt="masterCard">
+                            <img src="images/revolut.png" alt="revolut">
+                          </div>              
+                        </div>        
+                        <div class="row mb-3">
+                          <div class="col-6">
+                            <div class="form-floating m-3">
+                              <input type="password" id="formControlLgExpk8" class="form-control card-form-input"
+                                placeholder="MM/YYYY" />
+                              <label class="form-label card-form-label" for="formControlLgExpk8">Expire Date</label>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-floating m-3">
+                              <input type="password" id="formControlLgcvv8" class="form-control card-form-input" placeholder="Cvv" />
+                              <label class="form-label card-form-label" for="formControlLgcvv8">Cvv</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+
+                    <p class="payment-titles">Leave a Tip</p>
+
+                    <div class="row" style="justify-content: center;margin-bottom: 100px;">
+                      <div class="col-lg-3 col-md-3 col-sm-3 tipItems">
+                        <p class="tipPercentage">18%</p>
+                        <p class="tipPrice">$3.54</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-3 tipItems">
+                        <p class="tipPercentage">18%</p>
+                        <p class="tipPrice">$3.54</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-3 tipItems">
+                        <p class="tipPercentage">18%</p>
+                        <p class="tipPrice">$3.54</p>
+                      
+                      </div>
+
+                      <div class="col-lg-6 col-md-12 col-sm-12" id="card-items">
+    
+                        <div class="col-lg-6 col-md-12 col-sm-12 item-in-card-navLink">               
+                        <p class="item-in-order">Subtotal<span class="item-preferences-in-order"></span></p> 
+                            <span class="item-price-in-order">$12.60</span>
+                        </div>    
+        
+                        
+                        <div class="col-lg-6 col-md-12 col-sm-12 item-in-card-navLink">               
+                          <p class="item-in-order">Tax<span class="item-preferences-in-order"></span></p> 
+                              <span class="item-price-in-order">$1.60</span>
+                          </div> 
+                          <div class="col-lg-6 col-md-12 col-sm-12 item-in-card-navLink">               
+                            <p class="item-in-order">Tip<span class="item-preferences-in-order"></span></p> 
+                                <span class="item-price-in-order">$3.60</span>
+                            </div>  
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 item-in-card-total">               
+                              <p class="item-in-order">Total<span class="item-preferences-in-order"></span></p> 
+                                  <span class="item-price-in-order">$13.60</span>
+                              </div>  
+                      </div>   
+        
+
+                    </div>
+
+
+                  <!-- <h3 class="table-Number">Table 27</h3> -->
+                </div>
+            </div>
+            
+          
+      <div class="container-fluid">
+        <a class="goToCard  btn btn-success" href="./confirmationMessage.html">Order Now</a>
+      </div>
+      
+      </section>
+
+</body>
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+ 
+ //Showing the header when scrolling down
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 150) {
+        document.getElementById('navbar_top').classList.add('fixed-top');
+        document.getElementById('navbar_top').classList.add('after-scroll-navbar');
+        document.querySelector(".navbar-brand").style.color = 'white';
+        document.querySelector(".navbar-toggler").style.color = 'white';
+        document.querySelector(".selectedTableNumber").style.color = 'white';
+       
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+
+      } else {
+        document.getElementById('navbar_top').classList.remove('fixed-top');
+        document.getElementById('navbar_top').classList.remove('after-scroll-navbar');
+        document.querySelector(".navbar-brand").style.color = '#12ADB0';
+        document.querySelector(".navbar-toggler").style.color = '#12ADB0';
+        document.querySelector(".selectedTableNumber").style.color = '#12ADB0';
+         // remove padding top from body
+        document.body.style.paddingTop = '0';
+      } 
+  });
+});
+
+
+
+  //radio buttons declaratios
+  let cash = document.querySelector("#payWithCash");
+  let card = document.querySelector("#payWithCard");
+  let orderButton  =document.querySelector(".goToCard");
+  
+  //funtion when cash method selected
+  function cashSelection(){
+  let cardDetailsSection = document.querySelector(".cardDetailsSection");
+  cardDetailsSection.style.pointerEvents = 'none';
+    orderButton.innerText = "Pay Later & Place Order"
+  }
+  
+  //function when card method selected
+  function cardSelection(){
+  let cardDetailsSection = document.querySelector(".cardDetailsSection");
+  let cardNumber = document.querySelector("#cardNumber");
+  cardDetailsSection.style.pointerEvents = 'auto';
+  cardNumber.focus();
+  orderButton.innerText = "Pay Now & Place Order"
+  }
+  
+  //Event Listeners
+  cash.addEventListener("click",cashSelection);
+  card.addEventListener("click",cardSelection);
+  
+  
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip({trigger:'click'})
+})
+  
+  </script>
+
+
+
+</html>
